@@ -29,7 +29,7 @@ are public for educational purposes only.
     DigitalOcean spaces.
 
   - Tapes are assigned a numeric ID and logged in
-    (a Google Spreadsheet)[https://docs.google.com/spreadsheets/d/1cR9Lbw9_VGQcEn8eGD2b5MwGRGzKugKZ9PVFkrqmA7k/edit].
+    [a Google Spreadsheet](https://docs.google.com/spreadsheets/d/1cR9Lbw9_VGQcEn8eGD2b5MwGRGzKugKZ9PVFkrqmA7k/edit).
 
   - [`renumber.sh`](https://github.com/golden-vcr/image-tools/blob/main/renumber.sh)
     quickly renames newly-scanned images to adhere to the desired naming convention.
