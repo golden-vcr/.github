@@ -54,6 +54,11 @@ Golden VCR library.
 
 - Usage: `curl https://goldenvcr.com/api/tapes`
 
+## [**showtime**](https://github.com/golden-vcr/showtime)
+
+Backend API that supports Twitch EventSub notifications to facilitate interop between
+the Golden VCR app and live streams occurring on Twitch.
+
 ## [**frontend**](https://github.com/golden-vcr/frontend)
 
 Frontend webapp, built using Vite and Svelte.
