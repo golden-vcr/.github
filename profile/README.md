@@ -71,3 +71,8 @@ Frontend webapp, built using Vite and Svelte.
 - Deployment is currently a manual process: `rm -rf dist && npm build`, then upload
   to DigitalOcean Spaces bucket. Automated deployment and better support for
   CDN/caching/etc. TBD.
+
+## [**extensions**](https://github.com/golden-vcr/extensions)
+
+Frontend apps, also built using Svelte, that render within Twitch to provide extra
+information and interactivity to viewers during streams.
