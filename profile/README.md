@@ -40,6 +40,25 @@ they're added to the Golden VCR library.
 - [`upload.py`](https://github.com/golden-vcr/image-tools/blob/main/upload.py) syncs
   scanned and cropped images to the remote bucket.
 
+## [**video-tools**](https://github.com/golden-vcr/video-tools)
+
+Scripts and tools used to capture and record video footage in a way that's suitable for
+simultaneous streaming to Twitch.
+
+- We use a self-contained, portable installation of OBS that's dedicated solely to
+  capturing and recording VHS footage, with upscaling and deinterlacing.
+  [`install-obs.sh`](https://github.com/golden-vcr/video-tools/blob/main/install-obs.sh)
+  installs OBS.
+
+- Machine-specific OBS configurations are versioned in this repo as well: the install
+  script will activate the appropriate config by symlinking it as the main obs config
+  directory. See [`obs/.gitignore`](https://github.com/golden-vcr/video-tools/blob/main/obs/.gitignore)
+  for more details on how these files are versioned.
+
+- README explains how to configure a fresh installation of OBS for capturing VHS
+  footage. Configuration files can be added to source control via
+  [`bootstrap-obs-config.sh`](https://github.com/golden-vcr/video-tools/blob/main/bootstrap-obs-config.sh).
+
 ## [**tapes**](https://github.com/golden-vcr/tapes)
 
 Backend API that provides the webapp with information about the tapes available in the
