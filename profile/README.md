@@ -91,6 +91,11 @@ Frontend webapp, built using Vite and Svelte.
   to DigitalOcean Spaces bucket. Automated deployment and better support for
   CDN/caching/etc. TBD.
 
+## [**graphics**](https://github.com/golden-vcr/graphics)
+
+Separate frontend codebase for non-interactive overlays that render in OBS while
+streaming, in order to embed graphics for alerts etc. into the stream.
+
 ## [**extensions**](https://github.com/golden-vcr/extensions)
 
 Frontend apps, also built using Svelte, that render within Twitch to provide extra
