@@ -59,6 +59,11 @@ simultaneous streaming to Twitch.
   footage. Configuration files can be added to source control via
   [`bootstrap-obs-config.sh`](https://github.com/golden-vcr/video-tools/blob/main/bootstrap-obs-config.sh).
 
+## [**auth**](https://github.com/golden-vcr/auth)
+
+Backend API that allows users to authenticate with the Golden VCR app by logging in with
+Twitch.
+
 ## [**tapes**](https://github.com/golden-vcr/tapes)
 
 Backend API that provides the webapp with information about the tapes available in the
