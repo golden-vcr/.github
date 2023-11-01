@@ -69,10 +69,21 @@ Library containing common code that's shared across multiple backend server appl
 Backend API that allows users to authenticate with the Golden VCR app by logging in with
 Twitch.
 
+- API spec: https://golden-vcr.github.io/auth/
+
+## [**ledger**](https://github.com/golden-vcr/ledger)
+
+Backend API that keeps track of each user's balance of **Golden VCR Fun Points** and
+allows transactions to be initiated using those points.
+
+- API spec: https://golden-vcr.github.io/ledger/
+
 ## [**tapes**](https://github.com/golden-vcr/tapes)
 
 Backend API that provides the webapp with information about the tapes available in the
 Golden VCR library.
+
+- API spec: https://golden-vcr.github.io/tapes/
 
 - The application pulls tape metadata from the Google Sheets API, and it uses the S3
   API to check which images are available in the DigitalOcean Spaces bucket for each
@@ -87,6 +98,8 @@ Golden VCR library.
 
 Backend API that supports Twitch EventSub notifications to facilitate interop between
 the Golden VCR app and live streams occurring on Twitch.
+
+- API spec: https://golden-vcr.github.io/showtime/
 
 - Usage: `curl https://goldenvcr.com/api/showtime/status`
 
