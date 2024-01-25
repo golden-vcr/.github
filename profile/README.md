@@ -30,11 +30,10 @@ repositories are public for educational purposes only.
 | [**image-tools**](https://github.com/golden-vcr/image-tools)     | [**tapes**](https://github.com/golden-vcr/tapes)       | [**extensions**](https://github.com/golden-vcr/extensions) |
 | [**video-tools**](https://github.com/golden-vcr/video-tools)     | [**showtime**](https://github.com/golden-vcr/showtime) |                                                            |
 | [**server-common**](https://github.com/golden-vcr/server-common) | [**hooks**](https://github.com/golden-vcr/hooks)       |                                                            |
-|                                                                  | [chatbot](https://github.com/golden-vcr/chatbot)       |                                                            |
+| [**schemas**](https://github.com/golden-vcr/schemas)             | [**chatbot**](https://github.com/golden-vcr/chatbot)   |                                                            |
 |                                                                  | [**dispatch**](https://github.com/golden-vcr/dispatch) |                                                            |
-|                                                                  | [dynamo](https://github.com/golden-vcr/dynamo)         |                                                            |
+|                                                                  | [**dynamo**](https://github.com/golden-vcr/dynamo)     |                                                            |
 |                                                                  | [alerts](https://github.com/golden-vcr/alerts)         |                                                            |
-
 
 ## Core Platform
 
