@@ -23,35 +23,18 @@ repositories are public for educational purposes only.
 
 ## Repositories
 
-<div style="display: flex; flex-direction: row; gap: 3rem; justify-content: center; text-align: center; width: 100%; margin-bottom: 1rem;">
-  <div style="display: flex; flex-direction: column; gap: 0.5rem">
-    <div style="font-weight: bold">Core Platform</div>
-    <div><a href="https://github.com/golden-vcr/.github">.github</a></div>
-    <div><a href="https://github.com/golden-vcr/terraform">terraform</a></div>
-    <div><a href="https://github.com/golden-vcr/image-tools">image-tools</a></div>
-    <div><a href="https://github.com/golden-vcr/image-tools">video-tools</a></div>
-    <div><a href="https://github.com/golden-vcr/server-common">server-common</a></div>
-    <div><a href="https://github.com/golden-vcr/schemas">schemas</a></div>
-  </div>
-  <div style="display: flex; flex-direction: column; gap: 0.5rem">
-    <div style="font-weight: bold">Backend Services</div>
-    <div><a href="https://github.com/golden-vcr/auth">auth</a></div>
-    <div><a href="https://github.com/golden-vcr/ledger">ledger</a></div>
-    <div><a href="https://github.com/golden-vcr/tapes">tapes</a></div>
-    <div><a href="https://github.com/golden-vcr/showtime">showtime</a></div>
-    <div><a href="https://github.com/golden-vcr/hooks">hooks</a></div>
-    <div><a href="https://github.com/golden-vcr/chatbot" style="color: #f66">chatbot</a></div>
-    <div><a href="https://github.com/golden-vcr/dispatch">dispatch</a></div>
-    <div><a href="https://github.com/golden-vcr/dynamo" style="color: #f66">dynamo</a></div>
-    <div><a href="https://github.com/golden-vcr/alerts" style="color: #f66">alerts</a></div>
-  </div>
-  <div style="display: flex; flex-direction: column; gap: 0.5rem">
-    <div style="font-weight: bold">Frontend Apps</div>
-    <div><a href="https://github.com/golden-vcr/frontend">frontend</a></div>
-    <div><a href="https://github.com/golden-vcr/graphics">graphics</a></div>
-    <div><a href="https://github.com/golden-vcr/extensions">extensions</a></div>
-  </div>
-</div>
+| Core Platform                                                    | Backend Services                                       | Frontend Apps                                              |
+| ---------------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------- |
+| [**.github**](https://github.com/golden-vcr/.github)             | [**auth**](https://github.com/golden-vcr/auth)         | [**frontend**](https://github.com/golden-vcr/frontend)     |
+| [**terraform**](https://github.com/golden-vcr/terraform)         | [**ledger**](https://github.com/golden-vcr/ledger)     | [**graphics**](https://github.com/golden-vcr/graphics)     |
+| [**image-tools**](https://github.com/golden-vcr/image-tools)     | [**tapes**](https://github.com/golden-vcr/tapes)       | [**extensions**](https://github.com/golden-vcr/extensions) |
+| [**video-tools**](https://github.com/golden-vcr/video-tools)     | [**showtime**](https://github.com/golden-vcr/showtime) |                                                            |
+| [**server-common**](https://github.com/golden-vcr/server-common) | [**hooks**](https://github.com/golden-vcr/hooks)       |                                                            |
+|                                                                  | [chatbot](https://github.com/golden-vcr/chatbot)       |                                                            |
+|                                                                  | [**dispatch**](https://github.com/golden-vcr/dispatch) |                                                            |
+|                                                                  | [dynamo](https://github.com/golden-vcr/dynamo)         |                                                            |
+|                                                                  | [alerts](https://github.com/golden-vcr/alerts)         |                                                            |
+
 
 ## Core Platform
 
