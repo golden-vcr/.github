@@ -23,17 +23,17 @@ repositories are public for educational purposes only.
 
 ## Repositories
 
-| Core Platform                                                    | Backend Services                                       | Frontend Apps                                              |
-| ---------------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------- |
-| [**.github**](https://github.com/golden-vcr/.github)             | [**auth**](https://github.com/golden-vcr/auth)         | [**frontend**](https://github.com/golden-vcr/frontend)     |
-| [**terraform**](https://github.com/golden-vcr/terraform)         | [**ledger**](https://github.com/golden-vcr/ledger)     | [**graphics**](https://github.com/golden-vcr/graphics)     |
-| [**image-tools**](https://github.com/golden-vcr/image-tools)     | [**tapes**](https://github.com/golden-vcr/tapes)       | [**extensions**](https://github.com/golden-vcr/extensions) |
-| [**video-tools**](https://github.com/golden-vcr/video-tools)     | [**showtime**](https://github.com/golden-vcr/showtime) |                                                            |
-| [**server-common**](https://github.com/golden-vcr/server-common) | [**hooks**](https://github.com/golden-vcr/hooks)       |                                                            |
-| [**schemas**](https://github.com/golden-vcr/schemas)             | [**chatbot**](https://github.com/golden-vcr/chatbot)   |                                                            |
-|                                                                  | [**dispatch**](https://github.com/golden-vcr/dispatch) |                                                            |
-|                                                                  | [**dynamo**](https://github.com/golden-vcr/dynamo)     |                                                            |
-|                                                                  | [alerts](https://github.com/golden-vcr/alerts)         |                                                            |
+| Core Platform                                                    | Backend Services                                           | Frontend Apps                                              |
+| ---------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
+| [**.github**](https://github.com/golden-vcr/.github)             | [**auth**](https://github.com/golden-vcr/auth)             | [**frontend**](https://github.com/golden-vcr/frontend)     |
+| [**terraform**](https://github.com/golden-vcr/terraform)         | [**ledger**](https://github.com/golden-vcr/ledger)         | [**graphics**](https://github.com/golden-vcr/graphics)     |
+| [**image-tools**](https://github.com/golden-vcr/image-tools)     | [**tapes**](https://github.com/golden-vcr/tapes)           | [**extensions**](https://github.com/golden-vcr/extensions) |
+| [**video-tools**](https://github.com/golden-vcr/video-tools)     | [**broadcasts**](https://github.com/golden-vcr/broadcasts) |                                                            |
+| [**server-common**](https://github.com/golden-vcr/server-common) | [**hooks**](https://github.com/golden-vcr/hooks)           |                                                            |
+| [**schemas**](https://github.com/golden-vcr/schemas)             | [**chatbot**](https://github.com/golden-vcr/chatbot)       |                                                            |
+|                                                                  | [**dispatch**](https://github.com/golden-vcr/dispatch)     |                                                            |
+|                                                                  | [**dynamo**](https://github.com/golden-vcr/dynamo)         |                                                            |
+|                                                                  | [**alerts**](https://github.com/golden-vcr/alerts)         |                                                            |
 
 ## Core Platform
 
@@ -112,17 +112,11 @@ of core services includes:
   applications
 
 The remaining services deal with making live streams happen and allowing interesting
-things to happen during those streams. Currenly, most of that functionality is
-concentrated in a single codebase:
+things to happen during those streams. These include:
 
-- [**showtime**](https://github.com/golden-vcr/showtime), which encapsulates everything
-  that happens during streams, including tracking broadcast history, responding to
-  Twitch events, serving chat and alert data to frontend apps, and legacy image
-  generation functionality for alerts
-
-Much of that functionality is currently being factored out and reworked into a
-collection of smaller services, each with a more limited scope. Those new services
-include:
+- [**broadcasts**](https://github.com/golden-vcr/broadcasts), which keeps track of
+  whether the stream is currently live, and if so, which tape is currently being
+  screened; and which maintains a record of all past broadcasts and their data
 
 - [**hooks**](https://github.com/golden-vcr/hooks), which manages Twitch EventSub
   subscriptions and handles webhook requests initiated by Twitch in response to relevant
@@ -143,14 +137,14 @@ include:
   alerts that should be displayed onscreen during streams (via the
   [**graphics**](https://github.com/golden-vcr/graphics) app rendered in OBS)
 
-For more information on how these newer services fit together, see the overview of event
-types and message queues described in the README for the
+For more information on how these services fit together, see the overview of event types
+and message queues described in the README for the
 [**schemas**](https://github.com/golden-vcr/schemas) repository.
 
 All services are deisgned to be able to run locally with minimal effort: each repo's
 README contains instructions for populating an `.env` file with the necessary
 configuration details (from terraform state etc.); and then each process can simply be
-run with `go run cmd/<entrypoint>/main.go`, with server processes accessible via
+run with `go run ./cmd/<entrypoint>`, with server processes accessible via
 `http://localhost:<service-specific-port>`.
 
 ## Frontend Apps
